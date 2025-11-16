@@ -28,6 +28,7 @@ class AuthController extends Controller
             'role' => 'required'
         ]);
 
+
         User::create([
             'name' => $request->name,
             'email' => $request->email,
