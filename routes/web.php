@@ -3,16 +3,39 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
+/*
+|--------------------------------------------------------------------------
+| PUBLIC ROUTES
+|--------------------------------------------------------------------------
+*/
+
+// Homepage root
 Route::get('/', function () {
-    return view('welcome');
+    return view('home'); 
 });
+
+// Homepage /home
+Route::get('/home', function () {
+    return view('home'); 
+});
+
+// Login
 Route::get('/login', [AuthController::class, 'loginPage'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 
+// Register
 Route::get('/register', [AuthController::class, 'registerPage']);
 Route::post('/register', [AuthController::class, 'register']);
 
+// Logout
 Route::get('/logout', [AuthController::class, 'logout'])->middleware('auth');
+
+
+/*
+|--------------------------------------------------------------------------
+| ROLE-BASED ROUTES
+|--------------------------------------------------------------------------
+*/
 
 Route::get('/admin', function () {
     return "Halo Admin!";
