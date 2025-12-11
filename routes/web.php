@@ -48,3 +48,18 @@ Route::get('/staff', function () {
 Route::get('/user', function () {
     return "Halo User!";
 })->middleware(['auth', 'role:user']);
+
+// Homepage root
+Route::get('/', function () {
+    return view('home'); 
+});
+
+// Halaman Profil
+Route::get('/profil', function () {
+    return view('profile'); 
+});
+
+// Halaman layanan
+Route::get('/layanan', function () {
+    return view('layanan');
+});

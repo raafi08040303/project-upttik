@@ -1,54 +1,77 @@
-<x-layouts.main title="Beranda">
+<x-layouts.main title="Beranda - UPT TIK Itenas">
 
-    {{-- HERO --}}
-    <section class="relative h-[500px] bg-cover bg-center"
-        style="background-image: url('/img/hero.jpg')">
-        
-        <div class="absolute inset-0 bg-black/50"></div>
-
-        <div class="max-w-7xl mx-auto px-6 h-full flex items-center relative z-10">
-            <div>
-                <h1 class="text-white text-4xl font-bold drop-shadow-lg">
-                    Pusat Teknologi Informasi dan Komunikasi
+    {{-- BAGIAN 1: HERO SECTION (MODEL SPLIT) --}}
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col-reverse md:flex-row items-center gap-12">
+            
+            <div class="md:w-1/2 text-center md:text-left">
+                <span class="inline-block bg-blue-100 text-blue-700 font-bold px-4 py-1 rounded-full text-sm mb-6">
+                    Official Website
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Layanan Digital <br>
+                    <span class="text-blue-700">Kampus Itenas</span>
                 </h1>
-
-                <p class="text-gray-200 mt-4 max-w-xl">
-                    Mendukung layanan teknologi informasi untuk seluruh civitas akademika Itenas.
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Kami menyediakan infrastruktur jaringan, sistem informasi akademik, dan dukungan teknis terpadu untuk seluruh civitas akademika.
                 </p>
-
-                <a href="/layanan" 
-                   class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white rounded shadow hover:bg-blue-700">
-                    Lihat Layanan
-                </a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="/layanan" class="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition shadow-lg hover:-translate-y-1">
+                        Jelajahi Layanan
+                    </a>
+                    <a href="/kontak" class="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold hover:border-blue-700 hover:text-blue-700 transition">
+                        Hubungi Kami
+                    </a>
+                </div>
             </div>
+
+            <div class="md:w-1/2">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop" 
+                         class="rounded-2xl shadow-2xl relative z-10 border-4 border-white" 
+                         alt="Mahasiswa Itenas">
+                    
+                    <div class="absolute top-10 -right-10 w-full h-full bg-orange-200 rounded-2xl -z-10 transform rotate-3"></div>
+                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-600 rounded-full opacity-20 filter blur-3xl"></div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-
-    {{-- LAYANAN GRID --}}
-    <section class="max-w-7xl mx-auto px-6 mt-16">
-        <h2 class="text-2xl font-bold text-gray-800 mb-8">Layanan UPT-TIK</h2>
-
-        <div class="grid md:grid-cols-3 gap-6">
-            
-            {{-- CARD 1 --}}
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                <h3 class="font-semibold text-lg mb-2">Helpdesk</h3>
-                <p class="text-gray-600">Pengajuan layanan, troubleshooting, dan dukungan IT.</p>
+    {{-- BAGIAN 2: LAYANAN UTAMA --}}
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Apa yang Kami Lakukan?</h2>
+                <div class="h-1 w-24 bg-orange-500 mx-auto mt-4 rounded-full"></div>
             </div>
 
-            {{-- CARD 2 --}}
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                <h3 class="font-semibold text-lg mb-2">Jaringan</h3>
-                <p class="text-gray-600">Pengelolaan jaringan internet dan perangkat kampus.</p>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border border-gray-100 group">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                        💻
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sistem Informasi</h3>
+                    <p class="text-gray-600">Pengelolaan SIKAD, E-Learning, dan portal mahasiswa.</p>
+                </div>
 
-            {{-- CARD 3 --}}
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                <h3 class="font-semibold text-lg mb-2">Sistem Informasi</h3>
-                <p class="text-gray-600">Pengembangan aplikasi dan sistem kampus.</p>
-            </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border border-gray-100 group">
+                    <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:bg-orange-500 group-hover:text-white transition">
+                        📡
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Jaringan Internet</h3>
+                    <p class="text-gray-600">Layanan WiFi kampus, VPN, dan pemeliharaan server.</p>
+                </div>
 
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border border-gray-100 group">
+                    <div class="w-14 h-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:bg-green-600 group-hover:text-white transition">
+                        🛠
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Helpdesk IT</h3>
+                    <p class="text-gray-600">Bantuan teknis, reset password, dan perbaikan perangkat.</p>
+                </div>
+            </div>
         </div>
     </section>
 
