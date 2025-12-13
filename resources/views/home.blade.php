@@ -75,4 +75,73 @@
         </div>
     </section>
 
+    {{-- BAGIAN 3: LOKASI & KONTAK (INI YANG BARU) --}}
+    <section class="bg-white py-20 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Kunjungi Kami</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Datang langsung ke kantor UPT-TIK untuk konsultasi teknis atau bantuan layanan IT secara tatap muka.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mt-1 mr-4">
+                                📍
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Alamat Kantor</h4>
+                                <p class="text-gray-600 text-sm">
+                                    Gedung 14 Lantai 2, Institut Teknologi Nasional<br>
+                                    Jl. PH.H. Mustofa No.23, Bandung 40124
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mt-1 mr-4">
+                                📞
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Kontak</h4>
+                                <p class="text-gray-600 text-sm">
+                                    (022) 7272215 (Ext. 123)<br>
+                                    helpdesk@itenas.ac.id
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 mt-1 mr-4">
+                                ⏰
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Jam Operasional</h4>
+                                <p class="text-gray-600 text-sm">
+                                    Senin - Jumat: 08.00 - 16.00 WIB<br>
+                                    Istirahat: 12.00 - 13.00 WIB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Kolom Kanan: PETA --}}
+               <div class="h-96 bg-gray-200 rounded-2xl overflow-hidden shadow-lg border-4 border-white relative z-10">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        src="https://maps.google.com/maps?q=Institut%20Teknologi%20Nasional%20Bandung&hl=id&z=17&output=embed">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </x-layouts.main>
