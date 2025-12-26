@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Documents;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -20,6 +21,12 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+        ]);
+
+        Documents::create([
+            'title'        => 'CV',
+            'documentType' => 'SOP',
+            'url'          => 'documentItems/1766754931_CV.adiriyanto.pdf',
         ]);
     }
 }

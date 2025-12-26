@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DocumentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -63,3 +64,27 @@ Route::get('/profil', function () {
 Route::get('/layanan', function () {
     return view('layanan');
 });
+
+// Route::get('/documents', function () {
+//     return view('documents.documents');
+// });
+
+// Route::get('/documents', [DocumentController::class, 'index']);
+// Route::get('/documents/datatable', [DocumentController::class, 'datatable'])->name('documents.datatable');
+
+// Route::post('/documentsCreate', [DocumentController::class, 'create']);
+// Route::get('/documents/create', function () {
+//     return view('documents.create');
+// });
+Route::get('/documents', [DocumentController::class, 'index'])
+    ->name('documents.index');
+
+Route::get('/documents/datatable', [DocumentController::class, 'datatable'])
+    ->name('documents.datatable');
+
+Route::post('/documents', [DocumentController::class, 'create'])
+    ->name('documents.store');
+
+Route::get('/documents/create', function () {
+    return view('documents.create');
+})->name('documents.create');

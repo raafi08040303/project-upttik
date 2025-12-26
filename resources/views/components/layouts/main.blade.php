@@ -6,6 +6,7 @@
     <title>{{ $title ?? 'UPT-TIK Itenas' }}</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
@@ -43,8 +44,8 @@
                    class="{{ Request::is('layanan') ? 'text-blue-600 font-bold' : 'text-gray-600 hover:text-blue-600' }} transition">
                    Layanan
                 </a>
-                <a href="{{ url('/dokumen') }}" 
-                   class="{{ Request::is('dokumen') ? 'text-blue-600 font-bold' : 'text-gray-600 hover:text-blue-600' }} transition">
+                <a href="{{ url('/documents') }}" 
+                   class="{{ Request::is('documents') ? 'text-blue-600 font-bold' : 'text-gray-600 hover:text-blue-600' }} transition">
                    Dokumen
                 <a href="http://map.network.itenas.ac.id/" target="_blank" 
                    class="text-gray-600 hover:text-blue-600 transition">
@@ -103,6 +104,10 @@
             <p class="text-xs opacity-60">© 2025 UPT-TIK Institut Teknologi Nasional Bandung. All rights reserved.</p>
         </div>
     </footer>
-
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+@stack('scripts')
+@stack('styles')
 </body>
 </html>
