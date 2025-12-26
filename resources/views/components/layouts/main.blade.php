@@ -46,6 +46,9 @@
                 <a href="{{ url('/dokumen') }}" 
                    class="{{ Request::is('dokumen') ? 'text-blue-600 font-bold' : 'text-gray-600 hover:text-blue-600' }} transition">
                    Dokumen
+                <a href="http://map.network.itenas.ac.id/" target="_blank" 
+                   class="text-gray-600 hover:text-blue-600 transition">
+                   Pemetaan Jaringan
                 </a>
                 <a href="{{ url('/kontak') }}" 
                    class="bg-blue-900 text-white px-5 py-2.5 rounded-full hover:bg-blue-800 transition shadow">
@@ -80,9 +83,9 @@
             <div>
                 <h3 class="font-bold text-lg mb-4">Tautan Penting</h3>
                 <ul class="space-y-2 opacity-80">
-                    <li><a href="#" class="hover:text-orange-400 transition">Website Utama Itenas</a></li>
-                    <li><a href="#" class="hover:text-orange-400 transition">Sistem Akademik (SIKAD)</a></li>
-                    <li><a href="#" class="hover:text-orange-400 transition">E-Learning</a></li>
+                    <li><a href="https://www.itenas.ac.id/" class="hover:text-orange-400 transition">Website Utama Itenas</a></li>
+                    <li><a href="https://mahasiswa.itenas.ac.id/mahasiswa/MNM000" class="hover:text-orange-400 transition">Sistem Akademik (SIKAD)</a></li>
+                    <li><a href="https://elearning.itenas.ac.id/login/index.php" class="hover:text-orange-400 transition">E-Learning</a></li>
                 </ul>
             </div>
 

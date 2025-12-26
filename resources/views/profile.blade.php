@@ -454,7 +454,28 @@
 
         </div>
     </section>
+   
+    {{-- BAGIAN: ROADMAP (GAMBAR) --}}
+   
+    <section class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
 
+            {{-- Header Judul --}}
+            <div class="mb-12">
+                <span class="text-blue-600 font-bold tracking-wider uppercase text-xs mb-2 block">Our Strategic Plan</span>
+                <h2 class="text-3xl font-bold text-gray-900">Roadmap <span class="text-orange-500">Pengembangan</span></h2>
+                <p class="text-gray-500 mt-2">Peta jalan teknologi informasi dan komunikasi UPT-TIK Itenas.</p>
+            </div>
+
+            {{-- Container Gambar Roadmap --}}
+            <div class="bg-white p-4 rounded-2xl shadow-lg border border-gray-100 inline-block">
+                <img src="{{ asset('images/roadmap.jpg') }}" 
+                     alt="Roadmap Pengembangan UPT-TIK" 
+                     class="w-full h-auto max-h-[600px] object-contain rounded-xl hover:scale-[1.02] transition duration-500">
+            </div>
+
+        </div>
+    </section>
         </div>
     </section>
         </div>

@@ -27,8 +27,8 @@
                     <p class="text-gray-600 mb-4 line-clamp-3">
                         Layanan pembuatan email institusi (@itenas.ac.id), reset password SSO, dan manajemen akun akademik.
                     </p>
-                    <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:underline">
-                        Panduan Akun <span class="ml-2">&rarr;</span>
+                    <a href="https://tik-care.itenas.ac.id/tiket/create" class="inline-flex items-center text-blue-600 font-semibold hover:underline">
+                        HUBUNGI KAMI <span class="ml-2">&rarr;</span>
                     </a>
                 </div>
             </div>
@@ -45,8 +45,8 @@
                     <p class="text-gray-600 mb-4 line-clamp-3">
                         Informasi area hotspot kampus, cara koneksi WiFi Itenas di Laptop/HP, dan pelaporan gangguan sinyal.
                     </p>
-                    <a href="#" class="inline-flex items-center text-orange-600 font-semibold hover:underline">
-                        Cara Koneksi <span class="ml-2">&rarr;</span>
+                    <a href="https://tik-care.itenas.ac.id/tiket/create" class="inline-flex items-center text-orange-600 font-semibold hover:underline">
+                        HUBUNGI KAMI <span class="ml-2">&rarr;</span>
                     </a>
                 </div>
             </div>
@@ -63,8 +63,8 @@
                     <p class="text-gray-600 mb-4 line-clamp-3">
                         Fasilitas unduh software legal untuk mahasiswa aktif seperti Microsoft Office 365, Antivirus, dan SPSS.
                     </p>
-                    <a href="/dokumen" class="inline-flex items-center text-green-600 font-semibold hover:underline">
-                        Download Center <span class="ml-2">&rarr;</span>
+                    <a href="https://tik-care.itenas.ac.id/tiket/create" class="inline-flex items-center text-green-600 font-semibold hover:underline">
+                        HUBUNGI KAMI <span class="ml-2">&rarr;</span>
                     </a>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                         Bantuan teknis penggunaan E-Learning (Moodle), sinkronisasi mata kuliah, dan kendala login mahasiswa.
                     </p>
                     <a href="#" class="inline-flex items-center text-purple-600 font-semibold hover:underline">
-                        Akses E-Learning <span class="ml-2">&rarr;</span>
+                        HUBUNGI KAMI <span class="ml-2">&rarr;</span>
                     </a>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                         Layanan pengecekan dan perbaikan ringan untuk PC Lab, Laptop Inventaris, dan perangkat IT kelas.
                     </p>
                     <a href="/kontak" class="inline-flex items-center text-red-600 font-semibold hover:underline">
-                        Hubungi Teknisi <span class="ml-2">&rarr;</span>
+                        HUBUNGI KAMI <span class="ml-2">&rarr;</span>
                     </a>
                 </div>
             </div>
@@ -120,8 +120,8 @@
                     <p class="text-gray-600 mb-4 line-clamp-3">
                         Fasilitas subdomain (ukm.itenas.ac.id) dan hosting website untuk unit kegiatan, himpunan, dan event.
                     </p>
-                    <a href="#" class="inline-flex items-center text-teal-600 font-semibold hover:underline">
-                        Syarat Pengajuan <span class="ml-2">&rarr;</span>
+                    <a href="https://tik-care.itenas.ac.id/tiket/create" class="inline-flex items-center text-teal-600 font-semibold hover:underline">
+                        HUBUNGI KAMI <span class="ml-2">&rarr;</span>
                     </a>
                 </div>
             </div>
